@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
    
 </head>
-<body>
+<body> 
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Random Password Generator</a>
     </nav>
@@ -26,6 +26,18 @@
                         <input type ="text" id="display">
                         <br  />
                         <input type="range" min="0" max="50" name="slider" id="slider">
+                        <br  />
+                        <input type="checkbox" id="criteriaLower" value="lowercase">
+                        <label for="criteriaLower">Lowercase Letters</label>
+                        <br  />
+                        <input type="checkbox" id="criteriaUpper" value="uppercase">
+                        <label for="criteriaUpper">Uppercase Letters</label>
+                        <br  />
+                        <input type="checkbox" id="criteriaNumber" value="Numbers">
+                        <label for="criteriaUpper">Numbers</label>
+                        <br  />
+                        <input type="checkbox" id="criteriaSpecial" value="specialChars">
+                        <label for="criteriaSpecial">Special Characteres</label>
                         <br  />
                         <button onclick="generate()">Generate</button>
                         <button onclick="copyPassword()">Copy to Clipboard</button>
@@ -46,7 +58,7 @@
 
     </div>
 
-
+<console class="values"></console>
     <script src="script.js"></script> 
 </body>
 </html>
